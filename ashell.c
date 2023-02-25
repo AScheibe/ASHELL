@@ -186,14 +186,6 @@ void handleExec(int argc, char **args)
 }
 
 
-/// description: Takes a line and splits it into args similar to how argc
-///              and argv work in main
-/// line:        The line being split up. Will be mangled after completion
-///              of the function<
-/// args:        a pointer to an array of strings that will be filled and
-///              allocated with the args from the line
-/// num_args:    a point to an integer for the number of arguments in args
-/// return:      returns 0 on success, and -1 on failure
 int lexer(char *line, char ***args, int *num_args)
 {
     *num_args = 0;
